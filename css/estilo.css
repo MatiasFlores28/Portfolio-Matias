@@ -24,12 +24,12 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 15px 10px;
 }
-.contenedor-header header .logo a{
+.contenedor-header header .logo a{      /*color fuente principal*/
     font-family: 'Righteous';
     font-size: 36px;
-    color: #1CB698;
+    color: #c7820a;     
     text-decoration: none;
 }
 .contenedor-header header ul{
@@ -74,11 +74,11 @@ html{
     text-align: center;
     border-radius: 40px;
 }
-.inicio .contenido-banner img{
+.inicio .contenido-banner img{      /*color para circulo foto*/
     margin-top: 40px;
-    border: 10px solid #1CB698;
+    border: 10px solid #c7820a;
     display: block;
-    width: 80%;
+    width: 70%;
     margin: auto;
     border-radius: 100%;
 }
@@ -476,6 +476,69 @@ html{
     float: left;
     position: relative;
     bottom: 4px;
+}
+
+/* SECCION PORTFOLIO */
+.portfolio{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.portfolio .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.portfolio h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.portfolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portfolio .galeria .proyecto{
+    position: relative;
+    max-width: 500px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+    a{
+        color: #fff;
+        text-decoration: none;
+        list-style: none;
+    }
+}
+.portfolio .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+.portfolio .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.portfolio .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.portfolio .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+.portfolio .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
 }
 
 
